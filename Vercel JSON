@@ -1,0 +1,37 @@
+
+  "version": 2,
+  "buildCommand": "echo 'Build complete'",
+  "outputDirectory": "public",
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "Planet Leads Creator OS"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/(?P<path>.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
