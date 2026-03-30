@@ -1,0 +1,25 @@
+{
+  "name": "planet-leads-creator-os",
+  "version": "1.0.0",
+  "description": "Complete automation platform for digital product creators",
+  "private": true,
+  "scripts": {
+    "dev": "http-server -p 3000",
+    "build": "echo 'Static site ready for deployment'",
+    "start": "http-server"
+  },
+  "keywords": [
+    "automation",
+    "digital-products",
+    "sales-funnels",
+    "creator-tools"
+  ],
+  "author": "Planet Leads",
+  "license": "PROPRIETARY",
+  "engines": {
+    "node": "18.x || 20.x"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
